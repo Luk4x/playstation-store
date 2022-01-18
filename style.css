@@ -44,6 +44,7 @@ nav a {
     color: rgb(24, 22, 22);
     font-weight: bold;
     margin-right: 35px;
+    transition: 0.4s ease;
 }
 
 nav a:hover {
@@ -57,7 +58,7 @@ nav a:hover {
     margin-right: 10px;
 }
 
-.menu-button {
+.menu-button:hover {
     cursor: pointer;
 }
 
@@ -114,14 +115,29 @@ article > h3 {
 article > button {
     border: none;
     background: linear-gradient(to right, rgb(223, 13, 36), rgb(177, 7, 7));
-    padding: 15px 35px;
+    padding: 15px 20px;
     border-radius: 10px;
     color: whitesmoke;
     font-weight: bold;
+    transition: 0.8s ease-in-out;
+}
+
+article > button > img {
+    display: none;
+    width: 30px;
 }
 
 article > button:hover {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 190px;
     cursor: pointer;
+}
+
+article > button:hover img {
+    display: flex;
 }
 
 aside {
@@ -179,7 +195,7 @@ footer img {
     margin: 0 20px;
 }
 
-@media (max-width: 800px) { /* test */
+@media (max-width: 800px) { /* intermediary (test) */
     body {
         height: 100vh;
     }
@@ -213,18 +229,22 @@ footer img {
     nav {
         position: relative;
         display: none;
-        flex-direction: column;
-        border: 1px solid rgb(46, 109, 180);
-        padding: 10px 30px;
-        border-radius: 25%;
+        text-align: center;
+        transition: all 0.8s ease-in-out;
     }
 
     nav > a {
         display: block;
-        margin: 5px auto;
+        margin-top: 6px;
     }
 
     .menu-button {
         display: block;
+    }
+
+    article > button {
+        position: relative;
+        left: -20px;
+        margin: auto;
     }
 }
