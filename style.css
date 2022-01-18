@@ -119,7 +119,6 @@ article > button {
     border-radius: 10px;
     color: whitesmoke;
     font-weight: bold;
-    transition: 0.8s ease-in-out;
 }
 
 article > button > img {
@@ -162,6 +161,11 @@ aside {
 aside > img {
     width: 90%;
     z-index: 1;
+    animation-name: controllerAnim;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 aside > button {
@@ -230,7 +234,6 @@ footer img {
         position: relative;
         display: none;
         text-align: center;
-        transition: all 0.8s ease-in-out;
     }
 
     nav > a {
@@ -246,5 +249,11 @@ footer img {
         position: relative;
         left: -20px;
         margin: auto;
+    }
+}
+
+@keyframes controllerAnim {
+    0% {
+        transform: translate(-5%, -5%) rotate(-5deg);
     }
 }
