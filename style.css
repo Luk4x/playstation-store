@@ -57,6 +57,10 @@ nav a:hover {
     margin-right: 10px;
 }
 
+.menu-button {
+    cursor: pointer;
+}
+
 .menu-button > img {
     width: 30px;
 }
@@ -175,9 +179,16 @@ footer img {
     margin: 0 20px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px) { /* test */
     body {
-        height: 120vh;
+        height: 100vh;
+    }
+
+    main {
+        overflow-y: auto;
+        width: 98vw;
+        height: 98vh;
+        border-radius: 5px;
     }
 
     section {
@@ -190,6 +201,15 @@ footer img {
 }
 
 @media (max-width: 700px) {
+    body {
+        height: 100vh;
+    }
+
+    main {
+        width: 100vw;
+        height: 100vh;
+    }
+
     nav {
         position: relative;
         display: none;
@@ -206,18 +226,5 @@ footer img {
 
     .menu-button {
         display: block;
-    }
-}
-
-@media (max-width: 500px) {
-    body {
-        height: 100vh;
-    }
-
-    main {
-        overflow-y: auto;
-        width: 100vw;
-        height: 100vh;
-        border-radius: 5px;
     }
 }
