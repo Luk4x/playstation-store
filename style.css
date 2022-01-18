@@ -39,15 +39,26 @@ header > img {
     max-width: 80px;
 }
 
-nav > a {
+nav a {
     text-decoration: none;
     color: rgb(24, 22, 22);
     font-weight: bold;
     margin-right: 35px;
 }
 
-nav > a:hover {
+nav a:hover {
     color: rgb(223, 13, 36);
+}
+
+.menu-button {
+    border: none;
+    background-color: transparent;
+    display: none;
+    margin-right: 10px;
+}
+
+.menu-button > img {
+    width: 30px;
 }
 
 section {
@@ -162,4 +173,51 @@ footer > a:hover {
 footer img {
     height: 30px;
     margin: 0 20px;
+}
+
+@media (max-width: 800px) {
+    body {
+        height: 120vh;
+    }
+
+    section {
+        flex-direction: column-reverse;
+    }
+
+    section > aside {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 700px) {
+    nav {
+        position: relative;
+        display: none;
+        flex-direction: column;
+        border: 1px solid rgb(46, 109, 180);
+        padding: 10px 30px;
+        border-radius: 25%;
+    }
+
+    nav > a {
+        display: block;
+        margin: 5px auto;
+    }
+
+    .menu-button {
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        height: 100vh;
+    }
+
+    main {
+        overflow-y: auto;
+        width: 100vw;
+        height: 100vh;
+        border-radius: 5px;
+    }
 }
