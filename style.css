@@ -19,7 +19,7 @@ body {
 
 main {
     background-color: whitesmoke;
-    padding: 10px;
+    padding: 15px;
     border-radius: 20px;
     width: 80%;
     max-width: 1400px;
@@ -43,26 +43,27 @@ nav a {
     text-decoration: none;
     color: rgb(24, 22, 22);
     font-weight: bold;
-    margin-right: 35px;
-    transition: 0.4s ease;
+    margin-left: 35px;
+    transition: 0.2s ease-in-out;
 }
 
 nav a:hover {
     color: rgb(223, 13, 36);
 }
 
-.menu-button {
+#menu-button {
     border: none;
     background-color: transparent;
     display: none;
-    margin-right: 10px;
+    transition: 0.3s ease-in-out;
 }
 
-.menu-button:hover {
+#menu-button:hover {
     cursor: pointer;
+    margin-right: 5px;
 }
 
-.menu-button > img {
+#menu-button > img {
     width: 30px;
 }
 
@@ -119,6 +120,7 @@ article > button {
     border-radius: 10px;
     color: whitesmoke;
     font-weight: bold;
+    transition: 0.2s ease-in-out;
 }
 
 article > button > img {
@@ -137,6 +139,11 @@ article > button:hover {
 
 article > button:hover img {
     display: flex;
+}
+
+
+article > button:active {
+    transform: translateY(3px);
 }
 
 aside {
@@ -172,10 +179,20 @@ aside > button {
     border: none;
     background-color: transparent;
     z-index: 1;
+    transition: 0.2s ease-in-out;
 }
 
 aside > button:hover {
     cursor: pointer;
+}
+
+aside > button:hover img {
+    box-shadow: 0px 0px 10px rgba(26, 25, 25, 0.2);
+    border-radius: 50%;
+}
+
+aside > button:active {
+    transform: translateY(4px);
 }
 
 aside > button > img {
@@ -190,8 +207,16 @@ footer {
     margin-bottom: 20px;
 }
 
+footer > a {
+    transition: 0.3s ease-in-out;
+}
+
 footer > a:hover {
-    opacity: 0.9;
+    transform: translateY(-4px);
+}
+
+footer > a:active {
+    transform: translateY(-2px);
 }
 
 footer img {
@@ -241,11 +266,12 @@ footer img {
         margin-top: 6px;
     }
 
-    .menu-button {
+    #menu-button {
         display: block;
     }
 
     article > button {
+        display: block;
         position: relative;
         left: -20px;
         margin: auto;
