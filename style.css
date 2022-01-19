@@ -123,24 +123,14 @@ article > button {
     transition: 0.2s ease-in-out;
 }
 
-article > button > img {
-    display: none;
-    width: 30px;
-}
-
 article > button:hover {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 190px;
     cursor: pointer;
 }
 
-article > button:hover img {
-    display: flex;
+article > button::after{
+    content: url("./images/arrow2.png");
+    padding-left: 15px;
 }
-
 
 article > button:active {
     transform: translateY(3px);
