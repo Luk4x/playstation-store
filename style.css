@@ -60,7 +60,7 @@ nav a:hover {
 
 #menu-button:hover {
     cursor: pointer;
-    margin-right: 5px;
+    margin-left: 10px;
 }
 
 #menu-button > img {
@@ -241,23 +241,35 @@ footer img {
     }
 
     main {
+        border-radius: 0px;
         width: 100vw;
         height: 100vh;
     }
 
+    header {
+        flex-direction: row-reverse;
+    }
+
     nav {
-        position: relative;
+        transition: 1s ease-in-out;
+        position: absolute;
+        top: 100px;
+        left: 10px;
         display: none;
-        text-align: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     nav > a {
-        display: block;
-        margin-top: 6px;
+        margin: 6px;
     }
 
     #menu-button {
         display: block;
+    }
+
+    article > h1 {
+        font-size: 3.6em;
     }
 
     article > button {
@@ -265,6 +277,10 @@ footer img {
         position: relative;
         left: -20px;
         margin: auto;
+    }
+
+    aside {
+        margin-top: 30px;
     }
 }
 

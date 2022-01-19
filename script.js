@@ -1,12 +1,13 @@
 navbar = document.getElementById('navBar')
 menuBtn = document.getElementById('menu-button')
 
+
 function showMenu() {
-    if (navbar.style.display == 'block') {
+    if (navbar.style.display == 'flex') {
         navbar.style.display = 'none'
-        menuBtn.style.marginRight = '0'
+        menuBtn.style.marginLeft = ''
     } else {
-        navbar.style.display = 'block'
-        menuBtn.style.marginRight = '5px'
+        navbar.style.display = 'flex'
+        menuBtn.style.marginLeft = '10px'
     }
 }
