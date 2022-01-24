@@ -252,9 +252,8 @@ footer img {
 
     nav {
         transition: 1s ease-in-out;
-        position: absolute;
+        position: relative;
         top: 100px;
-        left: 10px;
         display: none;
         flex-direction: column;
         align-items: center;
