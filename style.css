@@ -10,8 +10,8 @@
 
 body {
     height: 100vh;
-    background: rgb(46, 109, 180);
-    background: linear-gradient(151deg, rgb(46, 109, 180) 20%, rgb(0, 172, 159) 50%, rgb(223, 13, 36) 85%);
+    background: #2e6db4;
+    background: linear-gradient(151deg, #2e6db4 20%, #00ac9f 50%, #df0d24);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +19,6 @@ body {
 
 main {
     background-color: whitesmoke;
-    padding: 15px;
     border-radius: 20px;
     width: 80%;
     max-width: 1400px;
@@ -37,6 +36,7 @@ header {
 
 header > img {
     max-width: 80px;
+    margin-left: 15px;
 }
 
 nav a {
@@ -47,8 +47,12 @@ nav a {
     transition: 0.2s ease-in-out;
 }
 
+nav a:nth-child(4) {
+    margin-right: 35px;
+}
+
 nav a:hover {
-    color: rgb(223, 13, 36);
+    color: #df0d24;
 }
 
 #menu-button {
@@ -56,11 +60,12 @@ nav a:hover {
     background-color: transparent;
     display: none;
     transition: 0.3s ease-in-out;
+    z-index: 3;
 }
 
 #menu-button:hover {
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 #menu-button > img {
@@ -85,7 +90,7 @@ article::before {
     position: absolute;
     top: 8px;
     left: -25px;
-    background: linear-gradient(to bottom, rgb(223, 13, 36), rgb(177, 7, 7));
+    background: linear-gradient(to bottom, #df0d24, #b10707);
 }
 
 article > h1 {
@@ -115,7 +120,7 @@ article > h3 {
 
 article > button {
     border: none;
-    background: linear-gradient(to right, rgb(223, 13, 36), rgb(177, 7, 7));
+    background: linear-gradient(45deg, #df0d24, #2e6db4);
     padding: 15px 20px;
     border-radius: 10px;
     color: whitesmoke;
@@ -214,16 +219,14 @@ footer img {
     margin: 0 20px;
 }
 
-@media (max-width: 800px) { /* intermediary (test) */
+nav.active {
+    z-index: 2;
+    top: 0px;
+}
+
+@media (max-width: 800px) {
     body {
         height: 100vh;
-    }
-
-    main {
-        overflow-y: auto;
-        width: 98vw;
-        height: 98vh;
-        border-radius: 5px;
     }
 
     section {
@@ -233,38 +236,51 @@ footer img {
     section > aside {
         margin-bottom: 40px;
     }
-}
-
-@media (max-width: 700px) {
-    body {
-        height: 100vh;
-    }
 
     main {
+        overflow-y: auto;
         border-radius: 0px;
         width: 100vw;
         height: 100vh;
+    }
+
+    nav {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(45deg, #00ac9f, #2e6db4);
+        width: 100%;
+        height: 35%;
+        top: -1000px;
+        padding: 100px;
+        transition: all .3s ease;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    nav > a {
+        margin: 6px;
+        font-size: 2em;
+        color: whitesmoke;
+    }
+
+    nav a:nth-child(4) {
+        margin-right: 0;
     }
 
     header {
         flex-direction: row-reverse;
     }
 
-    nav {
-        transition: 1s ease-in-out;
-        position: relative;
-        top: 100px;
-        display: none;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav > a {
-        margin: 6px;
+    header > img {
+        margin-right: 15px;
     }
 
     #menu-button {
         display: block;
+        margin-left: 15px;
     }
 
     article > h1 {

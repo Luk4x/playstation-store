@@ -1,13 +1,8 @@
-navbar = document.getElementById('navBar')
-menuBtn = document.getElementById('menu-button')
+mobileMenu = document.querySelector('#menu-button')
+navbar = document.querySelector('#navBar')
 
+mobileMenu.addEventListener('click', showMobileMenu)
 
-function showMenu() {
-    if (navbar.style.display == 'flex') {
-        navbar.style.display = 'none'
-        menuBtn.style.marginLeft = ''
-    } else {
-        navbar.style.display = 'flex'
-        menuBtn.style.marginLeft = '10px'
-    }
+function showMobileMenu() {
+    navbar.classList.toggle('active')
 }
