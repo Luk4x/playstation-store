@@ -166,7 +166,7 @@ aside {
 
 aside > img {
     width: 90%;
-    max-width: 800px;
+    max-width: 750px;
     z-index: 1;
     animation-name: controllerAnim;
     animation-duration: 2s;
