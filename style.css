@@ -93,18 +93,18 @@ article::before {
     background: linear-gradient(to bottom, #df0d24, #b10707);
 }
 
-article > h1 {
+article h1 {
     font-size: 3.9em;
 }
 
-article > h2 {
+article h2 {
     font-size: 2em;
     font-weight: 200;
     color: #707070;
     margin: 10px 0;
 }
 
-article > p {
+article p {
     color: #707070;
     font-weight: 100;
     font-size: 1.1em;
@@ -113,7 +113,7 @@ article > p {
     margin-bottom: 25px;
 }
 
-article > h3 {
+article h3 {
     font-size: 1.5em;
     margin-bottom: 45px;
 }
@@ -229,7 +229,7 @@ nav.active {
     top: 0px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     body {
         height: 100vh;
     }
@@ -288,7 +288,7 @@ nav.active {
         margin-left: 15px;
     }
 
-    article > h1 {
+    article h1 {
         font-size: 3.6em;
     }
 
