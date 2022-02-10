@@ -1,7 +1,7 @@
 # PlayStation Store
 
 ## About
-PlayStation Store is a project built basically using HTML and CSS. The focus was to make a website - the Front-end of a virtual store - responsive. I ended up using JavaScript to make the mobile menu, but the focus was to improve my semantics and discernment when dealing with HTML, and my mastery of CSS, when using media queries, display flex, organizing elements cimetrically...
+PlayStation Store is a project built basically using HTML and CSS. The focus was to make a website - the Front-end of a virtual store - responsive. I ended up using JavaScript to make the mobile menu, but the focus was to improve my semantics and discernment when dealing with HTML, and my mastery of CSS, by using media queries, display flex, organizing elements cimetrically...
 Oh, I also made a functional form in the support tab, using formsubmit.co services.
 
 ## Result
