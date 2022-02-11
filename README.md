@@ -5,8 +5,9 @@ PlayStation Store is a project built basically using HTML and CSS. The focus was
 Oh, I also made a functional form in the support tab, using formsubmit.co services.
 
 ## Result
-<img src="./images/result2.png" alt="challenge-result">
-<img src="./images/result1.png" alt="challenge-result">
+<p align="center">
+  <img src="./images/result-ps5store-min.gif" alt="result">
+</p>
 Access the project <a href="https://luk4x.github.io/playstation-store/">HERE</a>
 
 ## Contributors Contact
