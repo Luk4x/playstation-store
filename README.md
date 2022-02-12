@@ -6,7 +6,7 @@ Oh, I also made a functional form in the support tab, using formsubmit.co servic
 
 ## Result
 <p align="center">
-  <video src="https://user-images.githubusercontent.com/86276393/153664375-c45e207d-55ef-4867-b846-fa1fd533eee4.mp4">
+  <video src="https://user-images.githubusercontent.com/86276393/153721431-a5b6c30f-cdb9-4e04-a5be-2c65c1a437ea.mp4">
 </p>
 Access the project <a href="https://luk4x.github.io/playstation-store/">HERE</a>
 
