@@ -9,6 +9,7 @@
 }
 
 body {
+    padding: 40px 0;
     min-height: 100vh;
     background: #2e6db4;
     background: linear-gradient(151deg, #2e6db4 20%, #00ac9f 50%, #df0d24);
@@ -22,7 +23,7 @@ main {
     border-radius: 20px;
     width: 80%;
     max-width: 1400px;
-    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.3);
     overflow: hidden;
 }
 
@@ -84,13 +85,14 @@ article {
 }
 
 article::before {
-    content: "";
+    content: '';
     width: 10px;
     height: 57%;
     position: absolute;
     top: 8px;
     left: -25px;
     background: linear-gradient(to bottom, #df0d24, #b10707);
+    border-radius: 5px;
 }
 
 article h1 {
@@ -129,7 +131,7 @@ article h3 {
     border-radius: 10px;
     color: whitesmoke;
     font-weight: bold;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .buy-btn:hover {
@@ -137,8 +139,8 @@ article h3 {
     width: 175px;
 }
 
-.buy-btn:hover::after{
-    content: url("./images/arrow2.png");
+.buy-btn:hover::after {
+    content: url('./images/arrow2.png');
 }
 
 .buy-btn:active {
@@ -260,7 +262,7 @@ nav.active {
         height: 35%;
         top: -1000px;
         padding: 100px;
-        transition: all .3s ease;
+        transition: all 0.3s ease;
         border-bottom-left-radius: 50%;
         border-bottom-right-radius: 50%;
     }
