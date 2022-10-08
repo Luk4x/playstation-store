@@ -44,7 +44,7 @@
 > Assistir o vídeo acima e/ou acessar o projeto online ajudará na compreensão da explicação!
 
 A PlayStation Store é uma aplicação web que simula a vitrine de um e-commerce de periféricos relacionados ao PlayStation 5.<br>
-Meu maior foco duranto o desenvolvimento foi aperfeiçoar minha semântica e discernimento ao lidar com HTML, e minha maestria em CSS ao utilizar de MediaQueries, flexbox e etc para deixar o projeto o mais bem trabalho possível.<br>
+Meu maior foco durante o desenvolvimento foi aperfeiçoar minha semântica e discernimento ao lidar com HTML, e minha maestria em CSS ao utilizar de MediaQueries, flexbox e etc... para deixar o projeto o mais bem trabalho possível.<br>
 Utilizando os serviços da [FormSubmit](https://formsubmit.co/), eu também acabei desenvolvendo um formulário que realmente funciona na aba de suporte da aplicação.
 
 ### 📌 Alguns Destaques
